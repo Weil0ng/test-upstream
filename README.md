@@ -5,6 +5,7 @@ test-upstream
 change
 add
 
+0.0.2
 
 
 upstream new line changed
