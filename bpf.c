@@ -14,6 +14,7 @@ static bar() {
 
   line 5;
   line 6;
+  foo();
   line 11;
   line 12;
 
@@ -27,6 +28,18 @@ static bar() {
   line 14;
 #endif
   line 15;
-  return baz;
+
+  switch {
+    case 1:
+      tail_call(upstream_func1);
+      break;
+    case 2:
+      tail_call(upstream_func2);
+      break;
+    case 3:
+      ret = something;
+  }
+
+  return ret;
 }
 
